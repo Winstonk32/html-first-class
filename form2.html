@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback Form</title>
+</head>
+<body>
+	<h2>Feedback Form</h2>
+	 <form action="" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+        <br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+        <br>
+		<label for="experience">Rate your experience:</label>
+		<select id="experience" name="experience" required>
+			<option value="">Select an option</option>
+			<option value="Excellent">Excellent</option>
+			<option value="Good">Good</option>
+			<option value="Average">Average</option>
+			<option value="Poor">Poor</option>
+        </select>
+        <br>
+		<label>would you recommend our website to others?</label>
+        <label for="yes">Yes</label>
+		<input type="radio" id="yes" name="recommend" value="Yes">
+        <label for="no">No</label>
+		<input type="radio" id="no" name="recommend" value="No">
+        <br>
+		<label for="comments">Additional comments:</label>
+		<textarea id="comments" name="comments"></textarea>
+        <br>
+		<input type="checkbox" id="newsletter" name="newsletter">
+		<label for="newsletter">Subscribe to our newsletter</label>
+        <br>
+		<input type="submit" value="Submit Feedback">
+		
+	</form>
+</body>
+</html>

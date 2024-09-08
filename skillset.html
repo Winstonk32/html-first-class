@@ -4,8 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My skillset</title>
+    <style>
+      body{
+        background-image:url(images/white-abstract-background_23-2148809462.jpg);
+      }
+
+      .head{
+        background-color: aqua;
+      }
+       .navbar {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-right: 20px;
+  position: relative;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #ccc;
+}
+
+.nav-links a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+
+.nav-links a:hover::before {
+  transform: scaleX(1);
+}
+    </style>
 </head>
 <body>
+  <div>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="About me.html">About me</a></li>
+            <li><a href="Like watching.html">Hobbies</a></li>
+            <li><a href="education.html">education</a></li>
+            <li><a href="skillset.html">Skillset</a></li>
+            <li><a href="form2.html">Feedback form</a></li>
+          </ul>
+    </nav>
+    </div>
     <h1><mark style="display: flexbox;">My skillset</mark></h1>
     <p>Some may argue that a skillset is never truly finite; its a dynamic, evolving aspect of who we are. I wholeheartedly resonate with this notion, as I believe that learning and growth are continuous processes. Just as the world around us is in a constant state of flux, so too should our abilities and knowledge adapt and expand.</p>
     <br>
@@ -13,12 +79,14 @@
     <br>
     <p>In this sense, I view my skillset as a living entity, one that evolves and improves over time. Im committed to being a lifelong learner, always striving to acquire new skills, deepen existing ones, and adapt to new challenges. This ongoing journey of growth and self-improvement is, in my view, what makes life both fulfilling and exciting.</p>
     <h2><u> My skillset</u></h2>
-    <table border="1" width="100">
+    <table  border="1" width="100">
+    <thead class="head">
     <tr>
         <th>Tech skills</th>
         <th>Other skills</th>
         <th>Work experience</th>
       </tr>
+    </thead>
       <tr>
         <td>Excel</td>
         <td>Problem solver</td>
@@ -39,11 +107,5 @@
         <td>great at communication</td>
       </tr>
     </table>
-    <h3><u><span style="background-color: aqua;">My other pages</span></u></h3>
-    <a href="Like watching.html">what i like</a>
-    <br>
-    <a href="education.html">My education</a>
-    <br>
-    <a href="About me.html">About me</a>
 </body> 
 </html>

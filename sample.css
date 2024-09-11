@@ -1,0 +1,58 @@
+body{
+    background-image: url(images/white-abstract-background_23-2148809462.jpg);
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 15px;
+}
+
+.image{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 16);
+    transition:all ease-in-out .2s;
+    /*centre the image*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div{
+    border: 1px solid red;
+}
+
+h2{
+    font-size: larger;
+    font-weight: 500px;
+
+}
+
+
+.p1{
+    text-align: justify;
+    word-wrap: break-word;
+    color: rgb(236, 16, 16);
+    width: 300px;
+    border: 2px solid black;
+
+}
+
+.p2{
+    text-align: right;
+    word-wrap: break-word;
+    color: rgb(236, 16, 16);
+    width: 300px;
+    border: 2px solid black;
+
+
+
+}
+
+a{
+    text-decoration: wavy;
+
+}
+a:hover{
+    color:yellow;
+    text-decoration: wavy;
+}
+

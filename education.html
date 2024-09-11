@@ -1,111 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My education background</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Education Background | Winston Kigonya</title>
     <style>
-      .taibah{
-        float:left;
+           /* Reset default styles */
+           * {
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+           }
+
+           body {
+             font-family: "Arial", sans-serif;
+             background-color: #f4f4f9;
+             color: #333;
+             line-height: 1.6;
+             padding: 20px;
+           }
+
+           /* Navbar styling */
+           nav {
+             background-color: #2c3e50;
+             color: #fff;
+             padding: 15px 30px;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+           }
+
+           nav .logo {
+             font-size: 24px;
+             font-weight: bold;
+           }
+
+           nav ul {
+             list-style: none;
+             display: flex;
+           }
+
+           nav ul li {
+             margin: 0 15px;
+           }
+
+           nav ul li a {
+             color: #fff;
+             text-decoration: none;
+             font-size: 16px;
+             transition: color 0.3s ease;
+           }
+
+           nav ul li a:hover {
+             color: #3498db;
+           }
+
+           /* Education section styling */
+           .education-container {
+             background-color: #fff;
+             border-radius: 8px;
+             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+             max-width: 900px;
+             margin: 50px auto;
+             padding: 40px;
+             text-align: left;
+           }
+           .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      background-color: lightgray;
+      padding: 20px;
       }
+      .grid-item {
+      background-color: rgb(108, 109, 109);
+      padding: 20px;
+      text-align: center;
+           h1 {
+             font-size: 36px;
+             margin-bottom: 30px;
+             color: #2c3e50;
+             text-align: center;
+           }
+           .education-item {
+            margin-bottom: 30px;
+        }
 
-      .strath{
-        float: left;
-      }
+        .education-item h2 {
+            font-size: 24px;
+            color: #3498db;
+        }
 
+        .education-item h3 {
+            font-size: 20px;
+            color: #2c3e50;
+        }
 
-        .navbar {
-  background-color: #333;
-  padding: 10px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+        .education-item p {
+            font-size: 16px;
+            margin-top: 5px;
+            color: #555;
+        }
+           .img{
+             float: left;
+             margin: 5px;
+           }
 
-.nav-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+           /* Responsive design for smaller screens */
+           @media (max-width: 768px) {
+             h1 {
+               font-size: 28px;
+             }
 
-.nav-links li {
-  margin-right: 20px;
-  position: relative;
-}
+             .education-item h2 {
+               font-size: 20px;
+             }
 
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
+             .education-item h3 {
+               font-size: 18px;
+             }
 
-.nav-links a:hover {
-  color: #ccc;
-}
-
-.nav-links a::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #0c0c0c;
-  transform: scaleX(0);
-  transition: transform 0.2s ease;
-}
-
-.nav-links a:hover::before {
-  transform: scaleX(1);
-}
-
-.nav-links li:last-child {
-  margin-right: 0;
-}
-body {
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-            background-color: #0f0f0f;
-            color: #111111;
-            background-image:url(images/white-abstract-background_23-2148809462.jpg);
-}
+             .education-item p {
+               font-size: 14px;
+             }
+           }
     </style>
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <ul class="nav-links">
-              <li><a href="About me.html">About me</a></li>
-              <li><a href="Like watching.html">Hobbies</a></li>
-              <li><a href="education.html">education</a></li>
-              <li><a href="skillset.html">Skillset</a></li>
-              <li><a href="form2.html">Feedback form</a>Skillset</li>
-            </ul>
-          </nav>
-        </header>
-    <h1><b><u>My schools</u></b></h1>
-    <p>I studied in Uganda and went and was able to study the Cambridge curriculm</p>
-    <p>My highest academic reach is a diploma in International relations at Strathmore University </p>
-    <aside>
-    <h2>List of schools</h2>
-    <ul>
-        <li><b><span style="background-color: chartreuse;"> Taibah International school</span></b></li>
-        <img class="taibah" src="images/Taibah-International-School-logo-300x155.jpg" alt="Taibah" >
-        <p>This is where is completed my IGCSE and my AS level</p>
-        <p>2017-2023</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <li><b><span style="background-color: brown;">Strathmore University</span> </b></li>
-        <img class="strath" src="images/download.png" alt="Strathmore">
-        <p>Here i completed my diploma in international Relations</p>
-        <p>2023-2024</p>
-    </ul>
-    </aside>
-</body>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="logo">Winston Kigonya</div>
+      <ul>
+        <li><a href="About me.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skillset.html">Skillset</a></li>
+        <li><a href="Like watching.html">Hobbies</a></li>
+        <li><a href="form2.html">Feedback form</a></li>
+      </ul>
+    </nav>
+
+    <!-- Education Background Section -->
+    <div class="education-container">
+      <h1 style="text-align: center;"><u><b>Education Background</b></u></h1>
+      <div class="grid-container">
+        <div class="grid-item">
+          High school certificate
+          <img
+            class="img"
+            style="float: right"
+            src="images/Taibah-International-School-logo-300x155.jpg"
+            alt="Taibah"
+            width="300"
+            height="300"
+          />
+          <p>
+            Graduated from Taibah Int.Sch in Uganda. Graduated specializing in
+            mostly arts, with a focus on Economics, Business Studies, and
+            Computer Science. During this time, I developed a keen interest in
+            technology and business, which laid the foundation for my current
+            pursuits.
+          </p>
+          <p>2017-2023</p>
+        </div>
+
+        <div class="grid-item">
+          Diploma
+          <img
+            class="img"
+            style="float: right"
+            src="images/download.png"
+            alt="Strathmore"
+            width="300"
+            height="300"
+          />
+          <p>
+            I did a diploma in international relations at Strathmore Institute.
+            This diploma helped sharpen my mind on the working of things
+            international and how to relate to them
+          </p>
+          <p>2023-2024</p>
+        </div>
+      </div>
+  </body>
 </html>

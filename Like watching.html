@@ -1,123 +1,194 @@
-<!--My first html page-->
-<!--second line of code 9690-->
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>This is what i like watching</title>
-        <style>
-          body{
-            background-image:url(images/white-abstract-background_23-2148809462.jpg);
-          }
+<html lang="en">
 
-          .anime1{
-            float:right;
-            background-color:rgb(15, 220, 235);
-            text-emphasis-color:white;
-          }
-
-          .marvel1{
-            float: right;
-            background-color: burlywood;
-          }
-
-            .navbar {
-      background-color: #333;
-      padding: 10px;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    
-    .nav-links {
-      list-style: none;
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Winston Kigonya | Hobbies</title>
+  <style>
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      padding: 20px;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 15px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
-    
-    .nav-links li {
-      margin-right: 20px;
-      position: relative;
+
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
     }
-    
-    .nav-links a {
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
       color: #fff;
       text-decoration: none;
-      transition: color 0.2s ease;
+      font-size: 16px;
+      transition: color 0.3s ease;
     }
-    
-    .nav-links a:hover {
-      color: #ccc;
-    }
-    
-    .nav-links a::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: #ccc;
-      transform: scaleX(0);
-      transition: transform 0.2s ease;
-    }
-    
-    .nav-links a:hover::before {
-      transform: scaleX(1);
-    }
-    
-    .nav-links li:last-child {
-      margin-right: 0;
-    }
-    </style>
-    </head>
-    <body>
-        <div>
-        <nav class="navbar">
-            <ul class="nav-links">
-              <li><a href="About me.html">About me</a></li>
-              <li><a href="Like watching.html">Hobbies</a></li>
-              <li><a href="education.html">education</a></li>
-              <li><a href="skillset.html">Skillset</a></li>
-              <li><a href="form2.html">Feedback form</a></li>
-            </ul>
-          </nav>
-        </div>
-        <h1><u><mark= style="color: crimson;">Anime and Marvel: A Fusion of Two Worlds</mark></u></h1>
-        <p>Marvel and anime, though distinct in their origins and styles, share several intriguing correlations. Both are rooted in rich storytelling traditions that blend action, drama, and complex character development. Marvel, with its vast universe of superheroes, and anime, with its diverse genres and intricate plots, both cater to audiences seeking escapism and emotional engagement.</p>
-        <div class="container">
-            <section>
-        <h2><u>Icons of Marvel and Anime</u></h2>
-        <p>In both Marvel and anime, certain iconic characters have achieved legendary status due to their enduring impact and memorable journeys.</p>
-         <h3><i><u>Aime legends</u></i></h3>
-         <style>
-            ul {
-                list-style-type: square;
-            }
-         </style>
-         <h3 class="anime1.1">List of anime legends</h3>
-         <ul class="anime1">  
-            <li><b>Goku (Dragon Ball):</b> Renowned for his epic battles and relentless growth.</li>
-            <li><b>Naruto Uzumaki (Naruto):</b> Celebrated for his transformation from outcast to hero.</li>
-            <li><b>Spike Spiegel (Cowboy Bebop):</b> Known for his cool, complex persona.</li>
-            <li><b>Monkey D. Luffy (One Piece):</b> Famous for his adventurous quest to become the Pirate King.</li>
-        </ul> 
-             <video controls width="300">
-                <source src="videos/y2mate.com - Middle of the NightAMVAnime Mix_720pHFR.mp4" type="video/mp4">
-             </video>
-        <h4><i><u>Marvel legends</u></i></h4>
-        <ul class="marvel1">
-            <li><b>Peter Parker (Spider-Man):</b> Known for his relatable struggles and resilience.</li>
-            <li><b>Tony Stark (Iron Man):</b> Redefined the superhero archetype with his intelligence and charisma.</li>
-            <li><b>Logan (Wolverine):</b> Celebrated for his anti-hero complexity and indomitable spirit.</li>
-            <li><b>Steve Rogers (Captain America):</b> Embodies courage, leadership, and moral integrity.</li>
-        </ul>
-            <video controls width="300">
-                <source src="videos/y2mate.com - Celebrating 85 Years of Marvel_720p (1).mp4" type="video/mp4">
-            </video>
-           </section>
-            <br>
-    </body>
-</html> 
 
+    nav ul li a:hover {
+      color: #3498db;
+    }
+
+    /* Hobbies Section */
+    .hobbies-container {
+      max-width: 1200px;
+      margin: 80px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .hobby-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 30%;
+      margin-bottom: 40px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .hobby-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .hobby-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .hobby-content {
+      padding: 20px;
+    }
+
+    .hobby-title {
+      font-size: 22px;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .hobby-description {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hobby-card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">Winston Kigonya</div>
+    <ul>
+        <li><a href="About me.html">About me</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skillset.html">Skillset</a></li>
+        <li><a href="Like watching.html">hobbies</a></li>
+        <li><a href="form2.html">Feedback</a></li>
+    </ul>
+</nav>
+  <h1 style="text-align: center;"><u> Hobbies
+    </u></h1>
+  <p>I am a guy of many interests, some more unique than others, i try to feel my free time with things that reignite
+    the soul and creativity</p>
+  <div class="container">
+
+    <!-- Hobbies Section -->
+    <div class="hobbies-container">
+      <!-- Hobby: Anime -->
+      <div class="hobby-card">
+        <video class="hobby-image"  width="320" height="240" controls>
+          <source src="videos/y2mate.com - Middle of the NightAMVAnime Mix_720pHFR.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <div class="hobby-content">
+          <h2 class="hobby-title">Anime</h2>
+          <p class="hobby-description">Anime offers a unique blend of storytelling, art, and culture. I enjoy watching a
+            wide range of genres, from action-packed series to thought-provoking narratives.</p>
+            <p class="hobby-description"> Some of my fav anime include Jujutsi kaisen, Eminence in the shadow and Naruto</p>
+        </div>
+      </div>
+
+      <!-- Hobby 2: Marvel -->
+      <div class="hobby-card">
+        <video class="hobby-image"  width="320" height="240" controls>
+          <source src="videos/y2mate.com - Celebrating 85 Years of Marvel_720p (1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <div class="hobby-content">
+          <h2 class="hobby-title">Marvel</h2>
+          <p class="hobby-description">The Marvel Universe is a concept that i seem to like, let it be comics , movies,
+            i tend to have a direct interest in their characters. Basically the whole concept intrigues me</p>
+          <p class="hobby-description">Some of my fav shows include Avengers Endgame, Captain America Civil War and Deadpool and wolverine</p>
+        </div>
+      </div>
+
+      <!-- Hobby 3: Basketball -->
+      <div class="hobby-card">
+        <img src="images/gettyimages-515638474-e4122960-7d00-48af-8ac7-c4f0b19c7806.jpg" alt="basketball" class="hobby-image">
+        <div class="hobby-content">
+          <h2 class="hobby-title">Basketball</h2>
+          <p class="hobby-description">I got into basketball when i was around 16 years. Its a sport thaat relaxes me. I love me a game of pickup basketball with friends. My fav basketball team is Golden State Warriors, and my fav player is Steph Curry</p>
+        </div>
+      </div>
+
+      <!-- Hobby 4: Gaming -->
+      <div class="hobby-card">
+        <img src="images/ddrfu5v-8497eeac-ad03-4abf-957a-63159599231e.jpg" alt="Gaming" class="hobby-image">
+        <div class="hobby-content">
+          <h2 class="hobby-title">Gaming</h2>
+          <p class="hobby-description">In my free time, I enjoy playing video games. It’s nice way to challenge myself in a way,
+            improve my strategic thinking, and relax after a long day. Gaming in a sense helps one look at something in a diiferent perspective in order to archieve a gooal, thats why i love it. My go to games are Call of Duty, Fifa, NBA2K and football manager</p>
+        </div>
+      </div>
+
+      <!-- Hobby 5: Cooking -->
+      <div class="hobby-card">
+        <img src="images/pexels-yente-van-eynde-1263034-2403392.jpg" alt="Cooking" class="hobby-image">
+        <div class="hobby-content">
+          <h2 class="hobby-title">Cooking</h2>
+          <p class="hobby-description">I love experimenting with new recipes and cuisines. Cooking allows me to be
+            creative and test different ideas that i may have. My go to recipes are mostly all pasta based, like creamy chicken pasta or bologonese pasta</p>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>

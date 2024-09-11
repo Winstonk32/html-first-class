@@ -3,109 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My skillset</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Winston Kigonya | Skillset</title>
     <style>
-      body{
-        background-image:url(images/white-abstract-background_23-2148809462.jpg);
-      }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-      .head{
-        background-color: aqua;
-      }
-       .navbar {
-  background-color: #333;
-  padding: 10px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 20px;
+        }
 
-.nav-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+        /* Navigation Bar */
+        nav {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
 
-.nav-links li {
-  margin-right: 20px;
-  position: relative;
-}
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
 
-.nav-links a:hover {
-  color: #ccc;
-}
+        nav ul li {
+            margin: 0 15px;
+        }
 
-.nav-links a::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #ccc;
-  transform: scaleX(0);
-  transition: transform 0.2s ease;
-}
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
 
-.nav-links a:hover::before {
-  transform: scaleX(1);
-}
+        nav ul li a:hover {
+            color: #3498db;
+        }
+
+        /* Skillset Accordion Style */
+        .skillset-container {
+            max-width: 800px;
+            margin: 80px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+
+        /* Accordion Style */
+        .accordion {
+            margin-bottom: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            padding: 15px 20px;
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion-header:hover {
+            background-color: #2980b9;
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+       
+
+        .arrow {
+            font-size: 16px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .accordion-header {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 <body>
-  <div>
-    <nav class="navbar">
-        <ul class="nav-links">
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Winston Kigonya</div>
+        <ul>
             <li><a href="About me.html">About me</a></li>
-            <li><a href="Like watching.html">Hobbies</a></li>
-            <li><a href="education.html">education</a></li>
+            <li><a href="education.html">Education</a></li>
             <li><a href="skillset.html">Skillset</a></li>
-            <li><a href="form2.html">Feedback form</a></li>
-          </ul>
+            <li><a href="Like watching.html">hobbies</a></li>
+            <li><a href="form2.html">Feedback</a></li>
+        </ul>
     </nav>
-    </div>
-    <h1><mark style="display: flexbox;">My skillset</mark></h1>
-    <p>Some may argue that a skillset is never truly finite; its a dynamic, evolving aspect of who we are. I wholeheartedly resonate with this notion, as I believe that learning and growth are continuous processes. Just as the world around us is in a constant state of flux, so too should our abilities and knowledge adapt and expand.</p>
-    <br>
-    <p>For me, every experience is an opportunity to learn something new, every challenge a chance to refine and hone my skills. Whether it's through formal education, practical experience, or simply exploring new interests, I see my skillset as something that is always growing, never static. This mindset not only keeps me motivated but also opens up endless possibilities for personal and professional development.</p>
-    <br>
-    <p>In this sense, I view my skillset as a living entity, one that evolves and improves over time. Im committed to being a lifelong learner, always striving to acquire new skills, deepen existing ones, and adapt to new challenges. This ongoing journey of growth and self-improvement is, in my view, what makes life both fulfilling and exciting.</p>
-    <h2><u> My skillset</u></h2>
-    <table  border="1" width="100">
-    <thead class="head">
-    <tr>
-        <th>Tech skills</th>
-        <th>Other skills</th>
-        <th>Work experience</th>
-      </tr>
-    </thead>
-      <tr>
-        <td>Excel</td>
-        <td>Problem solver</td>
-        <td>Intern at EASSI</td>
-      </tr>
-      <tr>
-        <td>Powerpoint</td>
-        <td>critical thinker</td>
-        <td>IT assistant</td>
-      </tr>
-      <tr>
-        <td>word</td>
-        <td>Time management</td>
-        <td>front desk work</td>
-      </tr>
-      <tr>
-        <td>HTML</td>
-        <td>great at communication</td>
-      </tr>
-    </table>
-</body> 
+
+    <!-- Skillset Section -->
+    <div class="skillset-container">
+        <h1>My Skillset</h1>
+
+        <!-- Accordion for Tech Skills -->
+        <div class="accordion">
+            <div class="accordion-header">
+                Tech skills
+                <span class="arrow">&#9660;</span>
+            </div>
+            <div class="accordion-content">
+                <li>Excel</li>
+                <li>powerpoint</li>
+                <li>word</li>
+                <li>Html</li>
+                <li>CSS</li>
+                <div class="progress-bar" data-fill="90">
+                    <div class="progress-bar-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accordion for Office skills -->
+        <div class="accordion">
+            <div class="accordion-header">
+                Office skills
+                <span class="arrow">&#9660;</span>
+            </div>
+            <div class="accordion-content">
+              <li>time management</li>
+              <li>Organization</li>
+              <li>Problem solver</li>
+              <li>Critical thinker</li>
+                <div class="progress-bar" data-fill="75">
+                    <div class="progress-bar-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accordion for Work experience -->
+        <div class="accordion">
+            <div class="accordion-header">
+                Work experience
+                <span class="arrow">&#9660;</span>
+            </div>
+            <div class="accordion-content">
+              <li>Intern at EASSI</li>
+              <li>IT assistant</li>
+              <li>Front desk work</li>
+              <li>Administrative duties</li>
+                <div class="progress-bar" data-fill="80">
+                    <div class="progress-bar-fill"></div>
+                </div>
+            </div>
+        </div>
+
+
+    <script>
+        const accordions = document.querySelectorAll('.accordion');
+
+        accordions.forEach(accordion => {
+            const header = accordion.querySelector('.accordion-header');
+            header.addEventListener('click', () => {
+                const content = accordion.querySelector('.accordion-content');
+                const arrow = header.querySelector('.arrow');
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    arrow.innerHTML = '&#9660;'; // down arrow
+                } else {
+                    content.style.display = 'block';
+                    arrow.innerHTML = '&#9650;'; // up arrow
+                }
+            });
+        });
+    </script>
+
+</body>
 </html>

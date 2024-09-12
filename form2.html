@@ -112,6 +112,55 @@
            nav ul li a:hover {
              color: #3498db;
            }
+
+		    /* Footer Style */
+			footer {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 10px;
+            min-width: 250px;
+        }
+
+        .footer-section h4 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: #3498db;
+        }
+
+       
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            color: #ccc;
+        }
 	</style>
 </head>
 <body>
@@ -173,6 +222,33 @@
 				<input type="submit" value="Submit Feedback">
 			</div>
 		</form>
+	</div>
+	<footer>
+		<!-- Quick Links -->
+		<div class="footer-section">
+			<h4>Quick Links</h4>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<!-- Contact Info -->
+		<div class="footer-section">
+			<h4>Contact Info</h4>
+			<ul>
+				<li>Email: winston@example.com</li>
+				<li>Phone: +256 706 675 526</li>
+				<li>Phone: +254 794 744 770</li>
+				<li>Location: Kampala, Uganda/ Nairobi, Kenya</li>
+			</ul>
+		</div>
+	</footer>
+  
+	<!-- Footer Bottom -->
+	<div class="footer-bottom">
+		<p>&copy; 2024 Winston Kigonya. All rights reserved.</p>
 	</div>
 </body>
 </html>
